@@ -1,3 +1,10 @@
-<p>teste</p>
-<app-login></app-login>
-<router-outlet />
+<div class="content">
+  <ngx-custom-sidebar
+  [APP_NAME]="'Teste Aplicação'"
+  [APP_LOGO]="'assets/img/LEGO_logo.png'"
+  [SHOW_APP]="true"
+  [NAV_MENU]="NavMenus"
+  [current_route]="router.url"
+  ></ngx-custom-sidebar>
+  <router-outlet />
+</div>
